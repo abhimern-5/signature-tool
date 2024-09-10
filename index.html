@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Signature App</h1>
+        <div class="controls">
+            <!-- Existing Controls -->
+            <input type="color" id="strokeColor" title="Select Stroke Color" value="#000000"> <!-- Default black -->
+            <input type="color" id="bgColor" title="Select Background Color" value="#ffffff"> <!-- Default white -->
+            <input type="range" id="brushSize" min="1" max="10" value="5">
+            <button id="eraserBtn">Eraser</button>
+            <button id="undoBtn">Undo</button>
+            <button id="redoBtn">Redo</button>
+            <button id="clearBtn">Clear</button>
+            <button id="saveBtn">Save</button>
+            <select id="saveFormat">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="svg">SVG</option>
+            </select>
+            <button id="startSpeechBtn">Start Speech Recognition</button>
+        </div>
+        <canvas id="signatureCanvas"></canvas>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
